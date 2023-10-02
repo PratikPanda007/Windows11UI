@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style/signin.css">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- MomentJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+</head>
+<body>
+  <div id="slideUp" onclick="lockScreen()">
+    <span id="dateTime">
+      <span id="spanTime">19:06</span> 
+      <span id="spanDay">Saturday</span> 
+      <span id="spanDate">30/09/2023</span> 
+    </span>
+    <img src="./Assets/Windows11_lockedScreen.jpg">
+  </div>
+  <!--Login Page  -->
+  <div id="login-page-container" class="login-page">
+    <div id="login-page-inner">
+      <!-- User Profile Image -->
+      <div id="user-image-container">
+        <!-- <div class="user-icon-bg"></div> -->
+        <!-- <i class="fa fa-user-o fa-5x"></i> -->
+        <img src="./Assets/Me-modified.png" alt="Pratik Kumar Panda">
+      </div>
+      <!-- Username -->
+      <div id="username-container">
+        <h2>Pratik Kumar Panda</h2>
+      </div>
+      <!-- Password box -->
+      <div id="input-container">
+        <input type="password" id="password" placeholder="Enter password" onkeyup="passwordHandler()">
+        <button id="submit" onclick="submitPassword()" disabled><i class="fa-solid fa-right-to-bracket"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="screenLock" title="Lock Screen" onclick="openScreen()">
+    <i class="fa-solid fa-power-off fa-beat-fade fa-lg"></i>
+  </div>
+
+  <div class="wrapper_loader">
+    <div class="loader">
+      <span class="pip-0"></span>
+      <span class="pip-1"></span>
+      <span class="pip-2"></span>
+      <span class="pip-3"></span>
+      <span class="pip-4"></span>
+      <span class="pip-5"></span>
+    </div>
+  </div>
+
+    <script src="./script/signin.js"></script>
+</body>
+</html>

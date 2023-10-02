@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="./style/email.css">
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="outlookMail">
+        <img src="./Assets/outlokMail_Edited.png" alt="Outlook Mail" style="width: 100%;">
+        <div id="mailBody">
+            <div id="mailBodyHeader">
+                <table id="table__mailBodyHeader">
+                    <tr>
+                        <td style="width: 10%;">
+                            <button type="button" id="btnSendFrom" onclick="submitForm();" title="Go Ahead! Send it, I dare you..😈😈" disabled>Send</button>
+                        </td>
+                        <td style="width: 90%;">
+                            <input type="text" id="sendFrom" value="From: random@visitor.com" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div type="button" id="btnSendTo">To</div>
+                        </td>
+                        <td>
+                            <input type="text" id="sendTo" value="pratikpanda0007@gmail.com" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div type="button" id="btnSendCC">CC</div>
+                        </td>
+                        <td>
+                            <input type="text" id="sendCC" value="pratic.panda@gmail.com" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text"id="mailSubj" placeholder="Add Subject" 
+                            value="We would like to connect with you :)">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mailBodyDiv">
+                <span id="note">Minimum 10 characters required to send this fake mail</span>
+                <textarea id="mailBodyText" onkeyup="mailBodyCheck(event);" title="Minimum 10 characters required to send this fake mail">Hi,&#13;&#10;&#13;&#10;We would like to get in touch with you regarding your creativity.&#13;&#10;Kindly provide your time of availability.&#13;&#10;&#13;&#10;Regards,&#13;&#10;Visitor</textarea>
+                <!-- 
+                    &#10; Line Feed and &#13; Carriage Return
+                -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/email.js"></script>
+</body>
+</html>

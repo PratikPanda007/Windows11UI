@@ -1,0 +1,445 @@
+/* body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+    height: 100vh;
+    background-image: url("../Assets/Windows11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+}
+ */
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   /* background-image: url('bg.jpeg'); 
+    background-size: cover; */
+   overflow: hidden;
+   height: 100vh;
+ }
+
+ .taskbar {
+   background-color: #f3f3f3;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   z-index: 110;
+   justify-content: center;
+ }
+
+ /* Desktop Apps */
+  /* ============================================================= [ Desktop Apps Starts Here ] */
+ .startmenu {
+   position: absolute;
+   /* bottom: 50px; */
+   bottom: -655px;
+   width: 100%;
+   /* text-align: center; */
+   transition: all 0.3s ease-in;
+ }
+
+ .appWindow{
+  position: absolute;
+  /* bottom: 50px; */
+  bottom: -655px;
+  width: 100%;
+  /* text-align: center; */
+  transition: all 0.3s ease-in;
+ }
+
+ #appWindow_Content{
+  border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+ }
+
+ .documentViewer{
+  position: absolute;
+  /* bottom: 50px; */
+  bottom: -655px;
+  width: 100%;
+  /* text-align: center; */
+  transition: all 0.3s ease-in;
+}
+
+#documentViewer_content{
+  border: 1px solid lightgray;
+  width: 70%;
+  height: 70vh;
+  margin: 0px auto;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #f3f3f3;
+ }
+ #documentViewer_content img{
+  /* margin-top: 30px; */
+  width: 100%;
+ }
+ .wordViewer{
+  position: absolute;
+  /* bottom: 50px; */
+  bottom: -655px;
+  width: 100%;
+  /* text-align: center; */
+  transition: all 0.3s ease-in;
+}
+
+#wordViewer_content{
+  border: 1px solid lightgray;
+  width: 70%;
+  height: 70vh;
+  margin: 0px auto;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #f3f3f3;
+ }
+ #wordViewer_content img{
+  /* margin-top: 30px; */
+  width: 100%;
+ }
+
+ /* Email Viewer */
+ .emailViewer{
+  position: absolute;
+  /* bottom: 50px; */
+  bottom: -655px;
+  width: 100%;
+  /* text-align: center; */
+  transition: all 0.3s ease-in;
+}
+
+#emailViewer_content{
+  border: 1px solid lightgray;
+  width: 70%;
+  height: 70vh;
+  margin: 0px auto;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: #f3f3f3;
+ }
+ #emailViewer_content img{
+  /* margin-top: 30px; */
+  width: 100%;
+ }
+
+  /* Gallery Viewer */
+  .galleryViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #galleryViewer_content{
+    border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+   #galleryViewer_content img{
+    /* margin-top: 30px; */
+    width: 100%;
+   }
+
+   /* Downloads Viewer */
+  .downloadsViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #donloadsViewer_content{
+    border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+
+   /* CMD Viewer */
+  .cmdViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #cmdViewer_content{
+    border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+   
+ /* ============================================================= [ Desktop Apps Ends Here ] */
+
+ .startmenu img {
+   border-radius: 8px;
+ }
+
+ .right {
+   justify-self: flex-end;
+   display: flex;
+   position: absolute;
+   right: 0;
+   margin: 6px 0;
+   height: 85%;
+ }
+ /* DateTime */
+#dateTime{
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  line-height: normal;
+  text-align: center;
+}
+
+ .icons {
+   color: white;
+ }
+
+ #startmenu_Menu{
+  background-color: #F5F5F5;
+  height: 80vh;
+  width: 40%;
+  position: absolute;
+  margin: 0px 30%;
+  padding: 30px 50px;
+  z-index: 1;
+ }
+section{
+  border: 1px solid red;
+}
+ section:nth-child(1){
+  height: 45%;
+ }
+ section:nth-child(2){
+  height: 40%;
+ }
+ section:nth-child(3){
+  height: 10%;
+ }
+
+ #pinned_Apps{
+    width: 100%;
+    height: 90%;
+    /* height given for illustration */
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+ }
+
+ .pinnedApps{
+    margin: 4px;
+    height: 100px;
+    flex: 0 1 calc(20% - 30px); /* <-- adjusting for margin */
+    background: none;
+    border: none;
+ }
+ .pinnedApps img{
+  display: block;
+  margin: 5px auto;
+  height: 40px;
+ }
+
+ /* Header Logo */
+
+ #headerBar_logoTab_logo img{
+   /* width: 24px;
+    padding: 10px; */
+    width: 20px;
+      padding: 0px;
+}
+#headerBar_logoTab{
+  display: flex;
+}
+#headerBar_logoTab_logo{
+  width: 50px;
+}
+#headerBar_logoTab_tab{
+  width: 110%;
+  display: flex;
+}
+.tab{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+      padding: 0px 20px;
+}
+.tab:hover{
+  cursor: pointer;
+}
+.tabActive{
+  background: rgba(187, 187, 187, .3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.windowFunctionalities{
+  display: flex;
+    width: 5%;
+    position: absolute;
+      right: 10px;
+      top: 5px;
+}
+.windowFunctionalities span{
+  width: 50%;
+  float: left;
+  position: absolute;
+  left: 0px;
+}
+.windowFunctionalities div{
+  width: 50%;
+    margin: 0px auto;
+    display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0px 20px;
+    }
+    .windowFunctionalities div:hover{
+      background-color: rgba(255, 80, 80, 0.3);
+      cursor: pointer;
+}
+
+.windowScreenFunctionalities{
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  height: 30px;
+  background-color: #f3f3f3;
+}
+.windowScreenFunctionalities span{
+  width: 80%;
+  float: left;
+  position: absolute;
+  left: 0px;
+  padding: 0px 10px;
+}
+.windowScreenFunctionalities div{
+  width: 5%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+  height: 100%;
+  padding: 0px 20px;
+  float: right;
+  position: absolute;
+  right: 0px;
+  height: 30px;
+}
+    .windowScreenFunctionalities div:hover{
+      background-color: rgba(255, 80, 80, 0.3);
+      cursor: pointer;
+}
+/* Windows Functionalities Ends Here */
+#headerBarIconUrl{
+  display: flex;
+  height: 35px;
+    border: 1px solid lightgray;
+    padding: 5px 5px 0px 5px;
+}
+#headerBarIcon{
+  display: flex;
+}
+#headerBarIcon div{
+  margin: 2px 10px;
+}
+.headerIcon i{
+  vertical-align: middle;
+}
+#headerBarURL{
+  width: 80%;
+  height: 40px;
+}
+#url{
+  padding: 2px 15px;
+  background-color: #e6e4e3;
+  border-radius: 5px;
+  height: 70%;
+}
+#searchEngine img{
+  width: 24px;
+    padding: 0px 5px;
+}
+iframe{
+  width: 100%;
+    height: 60vh;
+    overflow-x: hidden;
+    margin-top: 4px;
+}
+
+
+
+/* Right Notification Window */
+#iconNotification{
+  cursor: pointer;
+}
+#rightNotificationWindow{
+  position: absolute;
+  padding: 15px;
+  right: 0%;
+  width: 20%;
+  height: 100%;
+  background-color: #f3f3f3;
+  display: block;
+}
+.notificationMsg{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  padding: 24px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.notificationMsg:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 40.px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 40.px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 40.px 0px rgba(0,0,0,0.75);
+}
+.notificationMsg img{
+  width: 50px;
+  height: 50px;
+}
+.notificationMsg p{
+  margin-left: 10px;
+}

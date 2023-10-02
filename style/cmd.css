@@ -1,0 +1,16 @@
+ :root {
+    --color: #aaa;
+    --background: #000;
+    --size: 1;
+    /* --glow: 1 */
+    --animation: terminal-blink;
+}
+body{
+    overflow: hidden;
+}
+#main__cmd{
+    height: 98vh;
+}
+#div__terminal{
+    height: 100vh;
+}

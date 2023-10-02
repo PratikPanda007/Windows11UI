@@ -1,0 +1,23 @@
+#main__downloads{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.divFileDownload{
+    width: 10%;
+    margin: 0px 15px;
+}
+.fileDownload{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+/* .fileDownload */
+.fileDownload img{
+    width: 100px;
+}
+.documentName{
+    display: flex;
+    justify-content: center;
+}

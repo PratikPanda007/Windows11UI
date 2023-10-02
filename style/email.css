@@ -1,0 +1,59 @@
+#outlookMail{
+    position: relative;
+}
+#mailBody{
+    position: absolute;
+    width: 100%;
+    top: 13vh;
+    left: 3.5vw;
+}
+#mailBodyHeader{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#table__mailBodyHeader{
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
+#SendFrom{
+    display: flex;
+    flex-direction: row;
+}
+#btnSendFrom:disabled{
+    background-color: #EFEFEF;
+    color: #000000;
+}
+#btnSendFrom{
+    background-color: #136CBB;
+    color: #FFFFFF;
+}
+#btnSendFrom, #btnSendTo, #btnSendCC{
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+#btnSendTo, #btnSendCC{
+    background-color: #f3f3f3;
+}
+#sendFrom, #sendTo, #sendCC{
+    width: 86%;
+    background-color: #f3f3f3;
+    border: none;
+    padding-left: 10px;
+}
+#mailSubj{
+    width: 86%;
+    border: none;
+    padding: 0px 5px;
+}
+#mailBodyDiv{
+    position: relative;
+    top: 10px;
+}
+#note{color: red;font-size: 10px;}
+#mailBodyText{
+    width: 80%;
+    height: 32vh;
+    padding: 5px;
+}
