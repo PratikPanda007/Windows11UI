@@ -238,9 +238,9 @@
   padding: 30px 50px;
   z-index: 1;
  }
-section{
+/* section{
   border: 1px solid red;
-}
+} */
  section:nth-child(1){
   height: 45%;
  }
