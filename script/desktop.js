@@ -88,39 +88,39 @@ function closeWordScreen(){
 
 // Email Viewer
 function toggleEmailOpener(){
-  let emailViewer = document.getElementsByClassName("emailViewer")[0];
-  if (emailViewer.style.bottom == "20vh") {
-    emailViewer.style.bottom = "-655px"
+  let elemViewer = document.getElementsByClassName("emailViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
   }
   else {
-    emailViewer.style.bottom = "20vh"
+    elemViewer.style.bottom = "20vh"
     $("#showEmail").load(BASE_URL + "Email.html");
   }
 }
 
 function closeEmailScreen(){
-  let emailViewer = document.getElementsByClassName("emailViewer")[0];
-  if (emailViewer.style.bottom == "20vh") {
-    emailViewer.style.bottom = "-655px"
+  let elemViewer = document.getElementsByClassName("emailViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
   }
 }
 
 // Gallery Viewer
 function toggleGalleryOpener(){
-  let galleryViewer = document.getElementsByClassName("galleryViewer")[0];
-  if (galleryViewer.style.bottom == "20vh") {
-    galleryViewer.style.bottom = "-655px"
+  let elemViewer = document.getElementsByClassName("galleryViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
   }
   else {
-    galleryViewer.style.bottom = "20vh"
+    elemViewer.style.bottom = "20vh"
     $("#showGallery").load(BASE_URL + "Gallery.html");
   }
 }
 
-function closeEmailScreen(){
-  let galleryViewer = document.getElementsByClassName("galleryViewer")[0];
-  if (galleryViewer.style.bottom == "20vh") {
-    galleryViewer.style.bottom = "-655px"
+function closeGalleryScreen(){
+  let elemViewer = document.getElementsByClassName("galleryViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
   }
 }
 
