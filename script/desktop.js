@@ -62,6 +62,7 @@ function toggleStyledResumeOpener(){
 }
 
 function closeStyledResumeScreen(){
+  console.log("65");
   let documentViewer = document.getElementsByClassName("documentViewer")[0];
   if (documentViewer.style.bottom == "24vh") {
     documentViewer.style.bottom = "-655px"
