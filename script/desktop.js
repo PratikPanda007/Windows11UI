@@ -62,7 +62,6 @@ function toggleStyledResumeOpener(){
 }
 
 function closeStyledResumeScreen(){
-  console.log("65");
   let documentViewer = document.getElementsByClassName("documentViewer")[0];
   if (documentViewer.style.bottom == "24vh") {
     documentViewer.style.bottom = "-655px"
@@ -95,7 +94,7 @@ function toggleEmailOpener(){
   }
   else {
     emailViewer.style.bottom = "20vh"
-    $("#showEmail").load(BASE_URL + "Email.html");
+    $("#showEmail").load("../Email.html");
   }
 }
 
@@ -114,7 +113,7 @@ function toggleGalleryOpener(){
   }
   else {
     galleryViewer.style.bottom = "20vh"
-    $("#showGallery").load(BASE_URL + "Gallery.html");
+    $("#showGallery").load("../Gallery.html");
   }
 }
 
@@ -133,7 +132,7 @@ function toggleDownloadsOpener(){
   }
   else {
     elemViewer.style.bottom = "20vh"
-    $("#showDownloads").load(BASE_URL + "Downloads.html");
+    $("#showDownloads").load("../Downloads.html");
   }
 }
 
@@ -154,7 +153,7 @@ function toggleCMDOpener(){
   //   elemViewer.style.bottom = "20vh"
   //   // $("#showCMD").load("../CMD.html");
   // }
-  window.open(BASE_URL + "CMD.html", "_blank");
+  window.open('../CMD.html', '_blank');
 }
 
 // function closeCMDScreen(){

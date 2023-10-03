@@ -1,5 +1,3 @@
-//var BASE_URL = "http://127.0.0.1:5500/";
-var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
 const MyApps = [
   {
     name: "Edge",
@@ -102,14 +100,14 @@ $.each(MyApps, function(i){
 // ================================================================================ [ Notifications ]
 const MyNotifications = [
   {
-    img: `${BASE_URL}Assets/Me-modified.png`,
+    img: "./Assets/Me-modified.png",
     msg: `Hello Visitor! Welcome to my page. You can access Applications if you tap on the icons from task bar.
     <br />
     Click on the notification (next to time section below) to close the <em>notification window</em>.`,
     display: "1",
   },
   {
-    img: `${BASE_URL}Assets/Me-modified.png`,
+    img: "./Assets/Me-modified.png",
     msg: `Each displayed Apps serves different purpose. You can download contents from Download app.`,
     display: "1",
   },
