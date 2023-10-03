@@ -1,4 +1,5 @@
-var BASE_URL = "http://127.0.0.1:5500/";
+//var BASE_URL = "http://127.0.0.1:5500/";
+var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
 const MyApps = [
   {
     name: "Edge",
