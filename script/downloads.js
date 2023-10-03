@@ -1,14 +1,14 @@
 var MyFiles = [
     {
         docName: "Docx Resume",
-        image: "../Assets/0001.jpg",
-        link: "../Assets/Resume_Pratik_Kumar_Panda.docx",
+        image: BASE_URL + "Assets/0001.jpg",
+        link: BASE_URL + "Assets/Resume_Pratik_Kumar_Panda.docx",
         display: "1",
     },
     {
         docName: "Figma Resume",
-        image: "../Assets/PratikPandaWindows.png",
-        link: "../Assets/PratikPandaWindows.png",
+        image: BASE_URL + "Assets/PratikPandaWindows.png",
+        link: BASE_URL + "Assets/PratikPandaWindows.png",
         display: "1",
     },
 ];
