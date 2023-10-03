@@ -420,6 +420,7 @@ iframe{
   height: 100%;
   background-color: #f3f3f3;
   display: block;
+  overflow: scroll;
 }
 .notificationMsg{
   display: flex;
@@ -429,6 +430,9 @@ iframe{
   margin-top: 20px;
   background-color: white;
   border-radius: 10px;
+}
+.notificationMsg:last-child{
+  margin-bottom: 40px;
 }
 .notificationMsg:hover{
   cursor: pointer;
