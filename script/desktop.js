@@ -94,7 +94,7 @@ function toggleEmailOpener(){
   }
   else {
     emailViewer.style.bottom = "20vh"
-    $("#showEmail").load("../Email.html");
+    $("#showEmail").load(BASE_URL + "Email.html");
   }
 }
 
@@ -113,7 +113,7 @@ function toggleGalleryOpener(){
   }
   else {
     galleryViewer.style.bottom = "20vh"
-    $("#showGallery").load("../Gallery.html");
+    $("#showGallery").load(BASE_URL + "Gallery.html");
   }
 }
 
@@ -132,7 +132,7 @@ function toggleDownloadsOpener(){
   }
   else {
     elemViewer.style.bottom = "20vh"
-    $("#showDownloads").load("../Downloads.html");
+    $("#showDownloads").load(BASE_URL + "Downloads.html");
   }
 }
 
@@ -153,7 +153,7 @@ function toggleCMDOpener(){
   //   elemViewer.style.bottom = "20vh"
   //   // $("#showCMD").load("../CMD.html");
   // }
-  window.open('../CMD.html', '_blank');
+  window.open(BASE_URL + "CMD.html", "_blank");
 }
 
 // function closeCMDScreen(){
