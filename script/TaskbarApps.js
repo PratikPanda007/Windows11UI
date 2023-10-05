@@ -1,5 +1,5 @@
-//var BASE_URL = "http://127.0.0.1:5500/";
-var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
+var BASE_URL = "http://127.0.0.1:5501/";
+//var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
 const MyApps = [
   {
     name: "Edge",
@@ -55,6 +55,22 @@ const MyApps = [
     name: "CMD",
     image: "./Assets/CMD.png",
     title: "CMD opens in new tab",
+    hasEvent: "0",
+    event: [],
+    display: "1",
+  },
+  {
+    name: "Calculator",
+    image: "./Assets/Calculator.png",
+    title: "Calculator",
+    hasEvent: "0",
+    event: [],
+    display: "1",
+  },
+  {
+    name: "Clock",
+    image: "./Assets/Clock.png",
+    title: "Calculator",
     hasEvent: "0",
     event: [],
     display: "1",

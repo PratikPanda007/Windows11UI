@@ -170,7 +170,7 @@
     transition: all 0.3s ease-in;
   }
   
-  #donloadsViewer_content{
+  #downloadsViewer_content{
     border: 1px solid lightgray;
     width: 70%;
     height: 70vh;
@@ -192,6 +192,48 @@
   }
   
   #cmdViewer_content{
+    border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+
+   /* Calculator Viewer */
+  .calculatorViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #calculatorViewer_content{
+    border: 1px solid lightgray;
+    width: 30%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+
+   /* Clock Viewer */
+  .clockViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #clockViewer_content{
     border: 1px solid lightgray;
     width: 70%;
     height: 70vh;
@@ -243,6 +285,7 @@
 } */
  section:nth-child(1){
   height: 45%;
+  margin-bottom: 10px;
  }
  section:nth-child(2){
   height: 40%;

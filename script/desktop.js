@@ -33,6 +33,10 @@ $('.pinnedApps').click(function () {
     toggleDownloadsOpener();
   }else if(this.children[1].innerHTML == MyApps[6].name){
     toggleCMDOpener();
+  }else if(this.children[1].innerHTML == MyApps[7].name){
+    toggleCalculatorOpener();
+  }else if(this.children[1].innerHTML == MyApps[8].name){
+    toggleClockOpener();
   }else{
     console.log("World");
   }
@@ -162,7 +166,46 @@ function toggleCMDOpener(){
 //     elemViewer.style.bottom = "-655px"
 //   }
 // }
+
+// Calculator Viewer
+function toggleCalculatorOpener(){
+  let elemViewer = document.getElementsByClassName("calculatorViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+  else {
+    elemViewer.style.bottom = "20vh"
+    $("#showCalculator").load(BASE_URL + "Calculator.html");
+  }
+}
+
+function closeCalculatorScreen(){
+  let elemViewer = document.getElementsByClassName("calculatorViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+}
+
+// Clock Viewer
+function toggleClockOpener(){
+  let elemViewer = document.getElementsByClassName("clockViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+  else {
+    elemViewer.style.bottom = "20vh"
+    $("#showClock").load(BASE_URL + "Clock.html");
+  }
+}
+
+function closeClockScreen(){
+  let elemViewer = document.getElementsByClassName("clockViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+}
 /* ===================================================================================== */
+
 // Date Time
 function getDateTime(){
   let today = new Date();
