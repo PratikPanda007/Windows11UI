@@ -55,7 +55,6 @@ function windowAppHandler(){
   }
   else {
     appWindow.style.bottom = "24vh";
-    $("#showEdge").load(BASE_URL + "Edge.html");
   }
 }
 
