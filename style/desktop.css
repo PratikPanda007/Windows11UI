@@ -513,3 +513,14 @@ iframe{
 .notificationMsg p{
   margin-left: 10px;
 }
+
+/* Bottom Profile Section */
+#bottomSection{
+  width: 100%;
+}
+#bottomSection__img{
+  width: 30px;
+}
+#bottomSection__logout{
+  cursor: pointer;
+}
