@@ -243,6 +243,28 @@
     overflow-x: hidden;
     background: #f3f3f3;
    }
+
+  /* Calendar Viewer */
+  .calendarViewer{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.3s ease-in;
+  }
+  
+  #calendarViewer_content{
+    border: 1px solid lightgray;
+    width: 70%;
+    height: 70vh;
+    margin: 0px auto;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f3f3f3;
+   }
+   
    
  /* ============================================================= [ Desktop Apps Ends Here ] */
 
@@ -289,6 +311,7 @@
  }
  section:nth-child(2){
   height: 40%;
+  margin-top: 30px;
  }
  section:nth-child(3){
   height: 10%;

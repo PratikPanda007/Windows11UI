@@ -1,5 +1,5 @@
-//var BASE_URL = "http://127.0.0.1:5501/";
-var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
+var BASE_URL = "http://127.0.0.1:5501/";
+//var BASE_URL = "https://pratikpanda007.github.io/Windows11UI/";
 const MyApps = [
   {
     name: "Edge",
@@ -80,7 +80,7 @@ const MyApps = [
     image: "./Assets/calendar.png",
     hasEvent: "0",
     event: [],
-    display: "0",
+    display: "1",
   },
   {
     name: "",

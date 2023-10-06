@@ -1,0 +1,8 @@
+#main__calendar{
+    height: 66vh;
+    overflow: auto;
+}
+.gc-calendar .gc-event {
+    /* font-size: 12px; */
+    font-size: 0.7rem;
+}

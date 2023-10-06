@@ -16,6 +16,7 @@ function taskbarHandler(){
 
 
 // Window Applications
+//TODO: Make it Switch case
 $('.pinnedApps').click(function () {
   console.log(this.children[1].innerHTML);
   if (this.children[1].innerHTML == MyApps[0].name){
@@ -37,7 +38,10 @@ $('.pinnedApps').click(function () {
     toggleCalculatorOpener();
   }else if(this.children[1].innerHTML == MyApps[8].name){
     toggleClockOpener();
-  }else{
+  }else if(this.children[1].innerHTML == MyApps[9].name){
+    toggleViewer("calendarViewer");
+  }
+  else{
     console.log("World");
   }
   taskbarHandler();
@@ -200,6 +204,25 @@ function toggleClockOpener(){
 
 function closeClockScreen(){
   let elemViewer = document.getElementsByClassName("clockViewer")[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+}
+
+// Clock Viewer
+function toggleViewer(elemName){
+  let elemViewer = document.getElementsByClassName(elemName)[0];
+  if (elemViewer.style.bottom == "20vh") {
+    elemViewer.style.bottom = "-655px"
+  }
+  else {
+    elemViewer.style.bottom = "20vh"
+    $("#showCalendar").load(BASE_URL + "Calendar.html");
+  }
+}
+
+function closeViewer(elemName){
+  let elemViewer = document.getElementsByClassName(elemName)[0];
   if (elemViewer.style.bottom == "20vh") {
     elemViewer.style.bottom = "-655px"
   }
