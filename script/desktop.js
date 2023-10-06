@@ -51,10 +51,11 @@ $('.pinnedApps').click(function () {
 function windowAppHandler(){
   let appWindow = document.getElementsByClassName("appWindow")[0];
   if (appWindow.style.bottom == "24vh") {
-    appWindow.style.bottom = "-655px"
+    appWindow.style.bottom = "-655px";
   }
   else {
-    appWindow.style.bottom = "24vh"
+    appWindow.style.bottom = "24vh";
+    $("#showEdge").load(BASE_URL + "Edge.html");
   }
 }
 
